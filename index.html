@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Select your favourite player </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Nunito:wght@200&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:wght@100;300;400;600&family=Quicksand:wght@300&family=Rajdhani:wght@300&family=Raleway:ital,wght@0,100;0,500;1,100;1,400&display=swap" rel="stylesheet">
+
 </head>
 <body >
     <!-- header section start -->
@@ -53,7 +54,7 @@
                         <img  class="w-full" src="images/player1.png" alt="">
                     </div>
                     <div class=" text-center text-white bg-black w-full px-3 py-5 ">
-                        <h3 class="text-2xl">Lionel Messi</h3>
+                        <h3 id="player-name-messi" class="text-2xl">Lionel Messi</h3>
                         <div class="flex justify-evenly text-base text-gray-400	">
                             <div class="mb-7">
                                 <p>36 Goals</p>
@@ -64,7 +65,7 @@
                             </div>
 
                         </div>
-                        <button class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
+                        <button id="player-selected-messi" class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
 
                     </div>
                 </div>
@@ -75,7 +76,7 @@
                         <img  class="w-full" src="images/player4.png" alt="">
                     </div>
                     <div class=" text-center text-white bg-black w-full px-3 py-5 ">
-                        <h3 class="text-2xl">Neymar Jr</h3>
+                        <h3 id="player-name-neymar" class="text-2xl">Neymar Jr</h3>
                         <div class="flex justify-evenly text-base text-gray-400	">
                             <div class="mb-7">
                                 <p>36 Goals</p>
@@ -86,7 +87,7 @@
                             </div>
 
                         </div>
-                        <button class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
+                        <button id="player-selected-neymar"class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
 
                     </div>
                 </div>
@@ -97,7 +98,7 @@
                         <img  class="w-full" src="images/player2.png" alt="">
                     </div>
                     <div class=" text-center text-white bg-black w-full px-3 py-5 ">
-                        <h3 class="text-2xl">Kylian Mbappé</h3>
+                        <h3 id="player-name-mbappe" class="text-2xl">Kylian Mbappé</h3>
                         <div class="flex justify-evenly text-base text-gray-400	">
                             <div class="mb-7">
                                 <p>36 Goals</p>
@@ -108,7 +109,7 @@
                             </div>
 
                         </div>
-                        <button class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
+                        <button id="player-selected-mbappe" class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
 
                     </div>
                 </div>
@@ -119,13 +120,11 @@
                     <div class=" text-center text-white bg-black w-full px-3 py-5 relative">
                         <h3 class="text-2xl">Selected - V</h3>
                         <img class="absolute right-8" src="images/Ureg-Ureg Marker.png" alt="">
-                        <div class="pt-12 text-left">
-                            <ul >
-                                <li class="p-3">1.</li>
-                                <li class="p-2">2.</li>
-                                <li class="p-2">3.</li>
-                                <li class="p-2">4.</li>
-                                <li class="p-2">5.</li></ul>
+                        <div class="pt-10 text-left">
+                            <ol class="ml-5" style="list-style-type: decimal;" id="all-players">
+                                <br><br><br><br>
+                              
+                              </ol>  
                         </div>
                         
                        
@@ -144,7 +143,7 @@
                         <img  class="w-full" src="images/player5.png" alt="">
                     </div>
                     <div class=" text-center text-white bg-black w-full px-3 py-5 ">
-                        <h3 class="text-2xl">Vítor Machado</h3>
+                        <h3 id="player-name-machado" class="text-2xl">Vítor Machado</h3>
                         <div class="flex justify-evenly text-base text-gray-400	">
                             <div class="mb-7">
                                 <p>36 Goals</p>
@@ -155,7 +154,7 @@
                             </div>
 
                         </div>
-                        <button class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
+                        <button id="player-selected-machado" class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
 
                     </div>
                 </div>
@@ -166,7 +165,7 @@
                         <img  class="w-full" src="images/player3.png" alt="">
                     </div>
                     <div class=" text-center text-white bg-black w-full px-3 py-5 ">
-                        <h3 class="text-2xl">Sergio Ramos</h3>
+                        <h3 id="player-name-ramos" class="text-2xl">Sergio Ramos</h3>
                         <div class="flex justify-evenly text-base text-gray-400	">
                             <div class="mb-7">
                                 <p>36 Goals</p>
@@ -177,7 +176,7 @@
                             </div>
 
                         </div>
-                        <button class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
+                        <button id="player-selected-ramos" class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
 
                     </div>
                 </div>
@@ -188,7 +187,7 @@
                         <img  class="w-full" src="images/player6.png" alt="">
                     </div>
                     <div class=" text-center text-white bg-black w-full px-3 py-5 ">
-                        <h3 class="text-2xl">Renato Sanches</h3>
+                        <h3 id="player-name-sanches" class="text-2xl">Renato Sanches</h3>
                         <div class="flex justify-evenly text-base text-gray-400	">
                             <div class="mb-7">
                                 <p>36 Goals</p>
@@ -199,7 +198,7 @@
                             </div>
 
                         </div>
-                        <button class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
+                        <button id="player-selected-sanches" class="bg-blue-600 w-full h-9 text-base font-bold ">Select</button>
 
                     </div>
                 </div>
@@ -212,7 +211,7 @@
                         <div>
                             <div class="flex justify-between mb-2">
                                 <p>Per Player</p>
-                                <input class="w-16 border-white	text-white bg-black" type="text">
+                                <input id="player-cost-id" style="outline: 1px solid white;" autofocus class="w-16 	text-white bg-black" type="text">
                                 
                             </div>
                             <button class="bg-blue-600 w-full h-9 text-base font-bold ">Calculate</button>
@@ -220,23 +219,24 @@
                             <div>
                                 <div class="flex justify-between mt-2">
                                     <p>Player Expenses</p>
-                                    <input class="w-16 border-white	text-white bg-black" type="text">
+                                    
+                                    <p class="w-16 border-white	text-white bg-black">00</p>
 
                                 </div>
                                 <div class="flex justify-between mt-2">
                                     <p>Manager</p>
-                                    <input class="w-16 border-white	text-white bg-black" type="text">
+                                    <input style="outline: 1px solid white;" autofocus class="w-16 text-white bg-black" type="text">
 
                                 </div>
                                 <div class="flex justify-between my-2">
                                     <p>Coach</p>
-                                    <input class="w-16 border-white	text-white bg-black" type="text">
+                                    <input style="outline: 1px solid white;" autofocus class="w-16 text-white bg-black" type="text">
 
                                 </div>
                                 <button class="bg-blue-600 w-full h-9 text-base font-bold ">Calculate Total</button>
                                 <div class="flex justify-between mt-2">
                                     <p>Total</p>
-                                    <input class="w-16 border-white	text-red-500 bg-black" type="text">
+                                    <p class="w-16 border-white	text-white bg-black">00</p>
 
                                 </div>
 
@@ -273,7 +273,7 @@
     </footer>
     <!-- footer section end -->
 
-    
+    <script src="js/selectedPlayer.js"></script>
     <script src="js/budget.js"></script>
 </body>
 </html>
