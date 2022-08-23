@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select your favourite player </title>
+    <title>Select your favourite squard </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,7 +210,7 @@
                     <div class="pt-4">
                         <div>
                             <div class="flex justify-between mb-2">
-                                <p>Per Player</p>
+                                <p class="text-gray-400">Per Player</p>
                                 <input id="player-cost-id" style="outline: 1px solid white;" autofocus class="w-16 	text-white bg-black" type="text">
                                 
                             </div>
@@ -218,24 +218,24 @@
 
                             <div>
                                 <div class="flex justify-between mt-2">
-                                    <p>Player Expenses</p>
+                                    <p class="text-gray-400">Player Expenses</p>
                                     
-                                    <p  class="w-16 border-white text-white bg-black">$<span id="player-expense-id">00</span> </p>
+                                    <p  class="w-16 border-white text-white bg-black">$<span id="player-expense-id"></span> </p>
 
                                 </div>
                                 <div class="flex justify-between mt-2">
-                                    <p>Manager</p>
+                                    <p class="text-gray-400">Manager</p>
                                     <input id="manager-cost-id" style="outline: 1px solid white;" autofocus class="w-16 text-white bg-black" type="text">
 
                                 </div>
                                 <div class="flex justify-between my-2">
-                                    <p>Coach</p>
+                                    <p class="text-gray-400">Coach</p>
                                     <input id="coach-cost-id" style="outline: 1px solid white;" autofocus class="w-16 text-white bg-black" type="text">
 
                                 </div>
                                 <button id="total-calculation-btn" class="bg-blue-600 w-full h-9 text-base font-bold ">Calculate Total</button>
                                 <div class="flex justify-between mt-2">
-                                    <p >Total</p>
+                                    <p class="text-gray-400" >Total</p>
                                     <p class="w-16 border-white	text-red-400 bg-black">$<span id="total-field-id"></span></p>
 
                                 </div>

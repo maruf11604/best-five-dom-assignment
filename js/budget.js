@@ -1,3 +1,5 @@
+
+//get value from this function
 function getAmountValue(playercostId){
     const perPlayerAmount=document.getElementById(playercostId);
     const perPlayerString=perPlayerAmount.value ;
@@ -5,12 +7,15 @@ function getAmountValue(playercostId){
     return perPlayerCost
 }
 
+//total player cost function 
 
 function total(playercost){
     const perPlayerCost= getAmountValue(playercost);
     let totalPlayerCost=perPlayerCost * 5;
     return totalPlayerCost
 }
+
+//player expense
 
 document.getElementById('calculate-player-total').addEventListener('click',function(){
 
@@ -20,6 +25,8 @@ document.getElementById('calculate-player-total').addEventListener('click',funct
     playerExpense.innerText=totalPlayerCost;
 
 })
+
+//total
 
 document.getElementById('total-calculation-btn').addEventListener('click',function(){
     const totalPlayerCost=total('player-cost-id');

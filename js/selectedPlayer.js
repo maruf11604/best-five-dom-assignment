@@ -1,17 +1,17 @@
 
-
+//get value
 function getValue(inputId){
         const playerNameField=document.getElementById(inputId);
         const playerNameString=playerNameField.innerText;
         return playerNameString
     }
-
+//set value 
 function setValue(outputId,newValue){
     
     const players=document.querySelectorAll('#all-players li');
     const value=Object.values(players).length
     console.log(value);
-
+//player checker
     if(value>4){
         alert('stop you can select only five players');
     }
@@ -29,6 +29,8 @@ function setValue(outputId,newValue){
 }
 
 
+
+//all event listeners
 
 
 document.getElementById('player-selected-messi').addEventListener('click',function(){
