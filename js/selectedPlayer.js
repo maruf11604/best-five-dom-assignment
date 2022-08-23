@@ -9,7 +9,7 @@ function getValue(inputId){
 function setValue(outputId,newValue){
     
     const players=document.querySelectorAll('#all-players li');
-    const value=Object.values(players).length
+    const value=Object.values(players).length;
     console.log(value);
 //player checker
     if(value>4){

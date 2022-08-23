@@ -11,7 +11,9 @@ function getAmountValue(playercostId){
 
 function total(playercost){
     const perPlayerCost= getAmountValue(playercost);
-    let totalPlayerCost=perPlayerCost * 5;
+    const players=document.querySelectorAll('#all-players li');
+    const value=Object.values(players).length;
+    let totalPlayerCost=perPlayerCost * value;
     return totalPlayerCost
 }
 
